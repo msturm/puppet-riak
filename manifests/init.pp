@@ -37,7 +37,7 @@ class riak {
   }
 
   service { 'dev.riak':
-    ensure  => 'stopped',
+    ensure  => 'running',
     require => Package['boxen/brews/riak']
   }
 
